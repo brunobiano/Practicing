@@ -1,1 +1,0 @@
-ultima atualização do dia
