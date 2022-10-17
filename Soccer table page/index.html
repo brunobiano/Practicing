@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Page</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <h1>My Favorite Soccer Teams</h1>
+    <div id="container">
+        <h4>Name: <input id="teamName" type="text" placeholder="Soccer Team name"></h4>
+        <h4>Rating: <input id="rate" type="number" size="1000px" min="0" max="10"  placeholder="Rate the team from 0 to 10"></h4>
+        <button id="addTeam">Add Team</button>
+    </div>
+
+    <div id="tables">
+        <table id="myTable">
+            <tr id="row">
+                <th>Title</th>
+                <th>Rating</th>
+                <th>Delete</th>
+            </tr>
+        </table>
+    </div>
+    
+    <script src="script.js" defer></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+</body>
+</html>

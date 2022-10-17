@@ -1,0 +1,78 @@
+h4 {
+    margin-left: 50px;
+}
+
+#rate {
+    width: 200px;
+}
+
+h1 {
+   text-align: center;
+}
+
+input {
+    border: 1px solid #DDDDDD;
+}
+
+input:focus {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    outline: none;
+}
+
+#container {
+    display: flex;
+    justify-content:space-around;  
+}
+
+#addTeam {
+    margin-top: 22px;
+    width: 100px;
+    height: 25px;
+    margin-right: 400px;
+    background-image: linear-gradient(180deg, white, rgb(165, 164, 164));
+    border-radius: 5px 5px;
+}
+
+table {
+    margin-left: 100px;
+    width: 1200px;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+    border-bottom: 1px solid;
+}
+
+th {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+}
+
+td {
+    border-bottom: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    border-left: 1px solid #dddddd;
+    justify-items: center;
+    width: 800px;
+    height: 40px;
+}
+
+td+td {
+    width: auto;
+}
+
+td:last-child {
+    width: 150px;
+}
+
+.newBtn {
+    background-image: linear-gradient(180deg, red, rgb(238, 64, 64));
+    border-radius: 5px 5px;
+    height: 35px;
+    width: 120px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
