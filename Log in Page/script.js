@@ -24,10 +24,10 @@ let validator = {
     checkInput: (input) => {
         let rules = input.getAttribute('data-rules');
 
-        if (rules !== null) { // significa que tem regra no input
-            rules = rules.split('|'); // separa em uma array de regras
-            for (let i in rules) { // itera no index da array
-                let rulesDetails = rules[i].split('='); // separador pro min
+        if (rules !== null) {
+            rules = rules.split('|');
+            for (let i in rules) {
+                let rulesDetails = rules[i].split('='); 
                 switch (rulesDetails[0]) {
                     case 'required':
                         if (input.value == '') {
@@ -50,7 +50,7 @@ let validator = {
                 }
             }
         }
-        return true; // pq tava retornando true quando tinha mais de uma regra no data do html?
+        return true;
     },
 
     showError: (input, error) => {
@@ -69,9 +69,9 @@ let validator = {
             clearingInputs[i].style = '';
         }
         
-        let erasingError = document.querySelectorAll('.error'); // importante lembrar de querySelectorAll na hora de iterar.
+        let erasingError = document.querySelectorAll('.error');
         for (let i = 0; i < erasingError.length; i++) {
-            erasingError[i].remove(); // Mas o style.display = 'none' tbm funciona
+            erasingError[i].remove();
         }
     }
 }
