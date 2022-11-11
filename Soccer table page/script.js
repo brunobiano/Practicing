@@ -12,10 +12,11 @@ $(document).ready(function(){
         
         $('table').on('click', '.newBtn', function(){
             $(this).closest('tr').remove(); 
-        }); // entender o on com 3 parametros e o this.closest
+        });
     });
 
-    // Sorting not working...
+    // Sorting not working yet...
+    
     let $items = [];
 
     $('th').on('click', function(){
